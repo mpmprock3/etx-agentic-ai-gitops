@@ -51,7 +51,7 @@ spec:
       values: |
         namespace: ${NAMESPACE}
         agentConfig:
-          llamaStackUrl: "http://llamastack-with-config-service.${USERNAME}-llama-stack.svc.cluster.local:8321"
+          llamaStackUrl: "http://${USERNAME}-llama-stack-service.${USERNAME}-llama-stack.svc.cluster.local:8321"
   destination:
     server: https://kubernetes.default.svc
   syncPolicy:

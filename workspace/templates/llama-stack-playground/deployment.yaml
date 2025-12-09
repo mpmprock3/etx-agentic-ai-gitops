@@ -66,9 +66,7 @@ spec:
             - name: STREAMLIT_SERVER_PORT
               value: "8501"
             - name: LLAMA_STACK_ENDPOINT
-              value: "http://llamastack-with-config-service:8321"
-            # - name: DEFAULT_MODEL
-            #   value: "granite-31-2b-instruct"
+              value: "http://{{ .Values.username }}-llama-stack-service:8321"
             - name: TAVILY_SEARCH_API_KEY
               valueFrom:
                 secretKeyRef:

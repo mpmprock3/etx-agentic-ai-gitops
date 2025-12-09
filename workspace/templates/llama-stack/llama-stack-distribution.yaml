@@ -2,7 +2,7 @@
 apiVersion: llamastack.io/v1alpha1
 kind: LlamaStackDistribution
 metadata:
-  name: llamastack-with-config
+  name: {{ .Values.username }}-llama-stack
   namespace: {{ .Values.username }}-llama-stack
 spec:
   replicas: 1

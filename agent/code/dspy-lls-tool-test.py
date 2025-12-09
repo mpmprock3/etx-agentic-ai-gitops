@@ -15,7 +15,7 @@ from llama_stack_client import LlamaStackClient
 from rich import print
 
 load_dotenv()
-LLAMA_STACK_URL = os.getenv("LLAMA_STACK_URL") # LLAMA_STACK_URL=http://localhost:8321, LLAMA_STACK_URL=http://llamastack-with-config-service.llama-stack.svc.cluster.local:8321
+LLAMA_STACK_URL = os.getenv("LLAMA_STACK_URL") # LLAMA_STACK_URL=http://localhost:8321, LLAMA_STACK_URL=http://userX-llama-stack-service.userX-llama-stack.svc.cluster.local:8321
 
 
 root = logging.getLogger()
