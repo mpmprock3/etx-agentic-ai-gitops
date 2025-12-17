@@ -46,4 +46,8 @@ spec:
         name: llama-stack-config
         jsonPointers:
         - /data
+      - group: llamastack.io
+        kind: LLamaStackDistribution
+        jsonPointers:
+        - /spec/server
 {{- end }}
